@@ -1,0 +1,21 @@
+Criação do ambiente Django:
+
+OBS: O Terminal utilizado no caso abaixo é o do Pycharm, portanto, sempre que referenciar TERMINAL, é dentro do próprio programa!
+
+1 - Crie um projeto separado (para evitar que a biblioteca extensa do Django acabe acumulando no projeto atual).
+2 - Instale o django com o pip install, ou abrindo o pycharm e dando um import django e logo clicar com o botão diretiro e instalar biblioteca.
+3 - Antes de criar qualquer arquivo, crie a estrutura do django com o comando: django-admin startproject dnome_diretorio_do_projeto .
+4 - Inicie o servidor com o comando: python manage.py runserver
+------
+Administração do ambiente Django:
+
+1 - No terminal que estiver rodando o runserver do passo 4 acima, aperte o comanto CTRL + C para parar o serviço.
+2 - Vamos criar um usuário SUPERUSER para administrar nossa página Django, primeiro digite o comando: python manage.py migrate
+3 - Agora rode o comando: python manage.py createsuperuser e defina os dados de login, e-mail e senha
+4 - Se quiser pode testar, iniciando novamente o runserver e colocando o endereço com o /admin no final: http://127.0.0.1:8000/admin
+5 - Caso tenha rodado o runserver, pare o serviço novamente e vamos estruturar o Djando através de seus apps (modulos)
+------
+Criação de módulos Django:
+
+1 - Abra o terminal e digite python manage.py startapp nome_que_definir, nesse caso, vou criar o app paginas, para administração das páginas do meu app.
+2 -
