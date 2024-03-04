@@ -31,13 +31,14 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'chat.apps.ChatConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'paginas.apps.PaginasConfig', #nomedoapp(pasta).apps.NomeDoappConfig
+
 ]
 
 MIDDLEWARE = [
@@ -55,7 +56,6 @@ ROOT_URLCONF = 'django_server.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR,'templates')], # Configuração acionada, obs. criar a pasta templates dentro da "paginas"
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

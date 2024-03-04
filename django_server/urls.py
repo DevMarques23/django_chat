@@ -20,5 +20,5 @@ from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('cadastros/', include('paginas.urls')),
+    #path('', include('meu_app.urls')),  # Include the URLs from your app
 ]
